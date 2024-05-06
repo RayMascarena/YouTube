@@ -1,0 +1,166 @@
+.header {
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  background-color: white;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color:rgb(230, 230, 230);
+
+  z-index: 100;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.hamburger {
+  height: 24px;
+  margin-left: 24px;
+  margin-right: 20px;
+}
+
+.youtube {
+  height: 24px;
+}
+
+.middle-section {
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 30px;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+}
+
+.search {
+  flex: 1;
+  border-radius: 2px;
+  height: 30px;
+  padding-left: 10px;
+  font-size: 16px;
+  border-color: rgb(196, 196, 196);
+  border-width: 1px;
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+}
+
+.search::placeholder {
+  font-family: roboto, arial;
+  font-size: 16px;
+}
+
+.searchbutton {
+  position: relative;
+  height: 40px;
+  width: 65px;
+  background-color: rgb(240, 240, 240);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(196, 196, 196);
+  margin-left: -3px;
+  margin-right: 10px;
+}
+
+.searchbutton,
+.voicebutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.searchbutton .tooltip,
+.voicebutton .tooltip {
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30;
+  opacity: 0;
+  transition: opacity 0.2s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.searchbutton:hover .tooltip,
+.voicebutton:hover .tooltip {
+  opacity: 1,
+}
+
+.searchicon {
+  height: 25px;
+}
+
+.voicebutton {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color:rgb(240, 240, 240);
+}
+
+.voiceicon {
+  height: 24px;
+  margin-left: 0;
+  display: flex;
+  align-items: center;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 180px;
+  margin-right: 20px;
+}
+
+.uploadicon {
+  height: 24px;
+}
+
+.appsicon {
+  height: 24px;
+}
+
+.belliconcontainer {
+  position: relative;
+}
+
+.notificationcount {
+  position: absolute;
+  top: -2px;
+  right: -5px;
+  background-color: rgb(200, 0, 0);
+  color: white;
+  border-radius: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  font-family: roboto, arial;
+  font-size: 11px;
+}
+
+.bellicon {
+  height: 24px;
+}
+
+.profilepic {
+  height: 36px;
+  border-radius: 20px;
+  background-color: black;
+}
